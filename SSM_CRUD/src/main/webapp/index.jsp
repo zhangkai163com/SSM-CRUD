@@ -627,10 +627,10 @@
                 if (confirm("确认删除"+empNames+"吗")){
                     $.ajax({
                         url:"${APP_PATH}/emp/"+del_idstr,
-                        type:"DELETE"
+                        type:"DELETE",
                         success:function (result) {
                             alert(result.msg)
-                            to_page(currentPage)
+                            to_page(currentPages)
                         }
                     })
                 }
